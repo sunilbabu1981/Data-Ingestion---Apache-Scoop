@@ -1,0 +1,15 @@
+Connect String
+
+Almost all Sqoop commands use a "--connect" string to connect to a database. 
+This string inorder to connect to the database needs the following information:
+
+  -> Database type (mysql, Oracle etc)
+  -> Hostname
+  -> Portnumber
+  -> Database Name 
+  
+  The syntax is as follows:
+  sqoop <command> \
+    --connect jdbc:<database type>:<Hostname>:<port number>/<database name> \
+    --username <userid>
+    --password <password>
